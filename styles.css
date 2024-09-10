@@ -1,0 +1,59 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+#product-list {
+  padding: 20px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 30%;
+  text-align: center;
+  /* Added this. Q2 and Q3 */
+  float: left;
+  margin: 12px;
+}
+
+/* Pseudo-classes for link behavior and order with errors */
+.product a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+a:visited{
+  color:purple;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Removes any extra spacing above the header in each .product div */
+h2{
+  margin-top: 0px;
+}
+
+/* Clear floats to avoid parent collapse */
+#product-list::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Please use google to find out what this block of code is and why it is being used in this code */
